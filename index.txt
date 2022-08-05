@@ -1,24 +1,24 @@
-vCard - Personal Portfolio
+Tanushri Vaidya
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Tanushri Vaidya
+Tanushri Vaidya
+Social Media Manager
 
 Show Contacts
 
 Email
-richard@example.com
+tanushri.vaidya@gmail.com
 
 Phone
-+1 (213) 352-2795
++91 8779608837
 
 Birthday
-June 23, 1982
+November 25, 2000
 
 Location
-Sacramento, California, USA
+Mumbai, India
 
 # navbar
 

@@ -25,17 +25,17 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(146, 24%, 17%) 3%, 
+    hsl(146, 23%, 40%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(13, 81%, 79%, 0.251) 0%, 
+    hsla(13, 81%, 79%, 0) 100%
+  ), hsl(13, 81%, 79%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    hsl(13, 81%, 79%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
@@ -50,23 +50,23 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(146, 24%, 40%), 
+    hsl(146, 24%, 17%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --jet: hsl(13, 81%, 79%);
+  --onyx: hsl(13, 81%, 79%);
+  --eerie-black-1: hsl(13, 81%, 79%);
+  --eerie-black-2: hsl(34, 70%, 87%);
+  --smoky-black: hsl(146, 24%, 17%);
+  --white-1: hsl(18, 96%, 44%);
+  --white-2: hsl(146, 24%, 17%);
+  --orange-yellow-crayola: hsl(18, 96%, 44%);
+  --vegas-gold: hsl(146, 24%, 17%);
+  --light-gray: hsl(146, 24%, 17%);
+  --light-gray-70: hsla(18, 96%, 44%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -459,7 +459,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(13, 81%, 79%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -750,11 +750,10 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: drop-shadow(8px 8px 10px #DC4405); }
 
 
 

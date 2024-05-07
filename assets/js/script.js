@@ -142,31 +142,31 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-const checkAccess = () => {
-  if (localStorage.getItem(articleKey)) {
-    return true;
-  } else {
-    return false;
-  }
-};
+// const checkAccess = () => {
+//   if (localStorage.getItem(articleKey)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    if (navigationLinks[i].innerText === "Portfolio" && !localStorage.getItem(articleKey)) {
-      const question = prompt("Enter password to view Portfolio:", "Contact me to know the password!");
+    // if (navigationLinks[i].innerText === "Portfolio" && !localStorage.getItem(articleKey)) {
+    //   const question = prompt("Enter password to view Portfolio:", "Contact me to know the password!");
 
-      if (question != answer) {
-        alert("Incorrect password. Access denied.");
-        document.getElementsByClassName("portfolio")[0].classList.remove("active");
-        document.getElementsByClassName("contact")[0].classList.add("active");
-        navigationLinks[navigationLinks.length - 1].classList.add("active");
-        return;
-      } else {
-        localStorage.setItem(articleKey, "true");
-      }
-    }
+    //   if (question != answer) {
+    //     alert("Incorrect password. Access denied.");
+    //     document.getElementsByClassName("portfolio")[0].classList.remove("active");
+    //     document.getElementsByClassName("contact")[0].classList.add("active");
+    //     navigationLinks[navigationLinks.length - 1].classList.add("active");
+    //     return;
+    //   } else {
+    //     localStorage.setItem(articleKey, "true");
+    //   }
+    // }
 
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
